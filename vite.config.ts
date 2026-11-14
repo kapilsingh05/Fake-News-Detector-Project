@@ -35,19 +35,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["lucide-react"],
   },
-  server: {
-    allowedHosts: [
-      "0xdaddy.ogserver.eu.org",
-      "0xarchit.ogserver.eu.org",
-      "0xarc.ogserver.eu.org",
-      "news.ogserver.eu.org",
-      // Add tunnel domains
-      "fake-news.0xarchit.is-a.dev",
-      "fetch.0xarchit.is-a.dev",
-      "gemini.0xarchit.is-a.dev",
-      "0xarchit.is-a.dev",
-    ],
-  },
+
   build: {
     // Generate sourcemaps for better debugging
     sourcemap: true,

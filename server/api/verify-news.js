@@ -6,8 +6,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // Load environment variables
 dotenv.config();
 
-const corsMiddleware = cors({
-  origin: ['https://06c7b1e7.news-verification-system.pages.dev', 'https://news-verification-system.pages.dev', 'https://news-verify.0xarchit.is-a.dev'],
+const corsMiddleware = cors({  
   methods: ['POST', 'OPTIONS'], // Explicitly allow POST and OPTIONS
   allowedHeaders: ['Content-Type'], // Allow Content-Type header
 });
