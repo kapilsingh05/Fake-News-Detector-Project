@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake News Detector</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fake News Detector</h1>
+    <p class="subtitle">Verify selected news with your existing backend.</p>
+
+    <label for="newsText">News text</label>
+    <textarea id="newsText" placeholder="Select news text on a webpage, or paste it here..."></textarea>
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option value="general">General</option>
+      <option value="education">Education</option>
+      <option value="finance">Finance</option>
+      <option value="politics">Politics</option>
+      <option value="world">World</option>
+      <option value="india">India</option>
+      <option value="tech">Tech</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="sports">Sports</option>
+      <option value="science">Science</option>
+    </select>
+
+    <button id="verifyButton">Verify News</button>
+
+    <div id="status" class="status"></div>
+
+    <div id="results" class="results hidden">
+      <div class="scoreBox">
+        <span>Trust Score</span>
+        <strong id="trustScore">-</strong>
+      </div>
+
+      <div class="resultItem">
+        <h2>Analysis</h2>
+        <p id="analysis"></p>
+      </div>
+
+      <div class="resultItem">
+        <h2>Sources</h2>
+        <p id="sources"></p>
+      </div>
+
+      <div class="resultItem">
+        <h2>Potential Biases</h2>
+        <ul id="biases"></ul>
+      </div>
+
+      <div class="resultItem">
+        <h2>Recommendation</h2>
+        <p id="recommendation"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
